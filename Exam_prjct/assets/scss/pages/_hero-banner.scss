@@ -1,0 +1,45 @@
+#hero-banner {
+  .carousel-caption {
+    top: 300px;
+    color: black;
+
+    h3 {
+      font-size: 27px;
+      color: rgb(75, 74, 74);
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 50px;
+      text-transform: uppercase;
+      margin-top: 29px;
+    }
+
+    #button {
+      display: flex;
+      justify-content: start;
+      margin-left: 10px;
+
+      margin-top: 29px;
+      button {
+        border: none;
+        padding: 9px 29px;
+        background-color: rgb(49, 49, 170);
+        border-radius: 23px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 500;
+        &:hover {
+          transition: 1s;
+          background-color: rgb(43, 40, 40);
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 20vh;
+    .carousel-caption {
+      top: 400px;
+    }
+  }
+}

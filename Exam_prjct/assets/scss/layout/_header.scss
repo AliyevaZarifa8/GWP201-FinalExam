@@ -1,0 +1,94 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  .header-top {
+    text-align: center;
+    button {
+      border: none;
+      background-color: rgb(215, 60, 86);
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 10px;
+    }
+  }
+  .header-bottom {
+    display: flex;
+    justify-content: space-between;
+    .headr-list {
+      display: flex;
+      align-items: center;
+      img {
+        width: 140px;
+      }
+      #ul {
+        display: flex;
+        margin: auto 0;
+        column-gap: 40px;
+        align-items: center;
+        li {
+          a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+              color: rgb(65, 65, 211);
+            }
+          }
+          #dropdownMenuButton1 {
+            color: black;
+            &::after {
+              display: none;
+            }
+            &:hover {
+              color: rgb(65, 65, 211);
+            }
+          }
+        }
+      }
+    }
+
+    .hedr-icon {
+      display: flex;
+      column-gap: 50px;
+      align-items: center;
+      i {
+        font-size: 20px;
+        &:hover {
+          color: blue;
+        }
+      }
+      a {
+        i {
+          color: black;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .header-top {
+      display: none;
+    }
+    .header-bottom {
+      .headr-list {
+        img {
+          width: 140px;
+        }
+        #ul {
+          display: none;
+        }
+      }
+
+      .hedr-icon {
+        display: none;
+      }
+    }
+  }
+}

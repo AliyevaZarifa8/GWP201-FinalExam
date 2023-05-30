@@ -1,0 +1,21 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  background-color: #222222;
+  height: 17vh;
+  margin-top: 15vh;
+  .footer-top {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+  }
+  .footer-btm {
+    color: grey;
+    span {
+      color: blue;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+#product-overview {
+  ul {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    margin: auto 0;
+    padding: 0;
+    li {
+      a {
+        text-decoration: none;
+        color: grey;
+        position: relative;
+        &:hover {
+          color: black;
+          &::after {
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 97%;
+            background-color: rgb(55, 52, 52);
+            bottom: -30%;
+            left: 1%;
+          }
+        }
+      }
+    }
+  }
+  #button {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    button {
+      font-size: 17px;
+      padding: 3px 10px;
+    }
+    input {
+      height: 5vh;
+    }
+  }
+
+  #dmnc-card {
+    margin-top: 10vh;
+    display: flex;
+    row-gap: 20px;
+    #card {
+      max-width: 300px;
+      overflow: hidden;
+      .card {
+        border: none;
+
+        &:hover {
+          #details {
+            display: block;
+          }
+        }
+        img {
+          transition: 2s all;
+          position: relative;
+
+          width: 100%;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+        #details {
+          display: none;
+          position: absolute;
+          bottom: 140px;
+          left: 90px;
+
+          a {
+            text-decoration: none;
+            color: black;
+            border-radius: 23px;
+            padding: 10px 20px;
+            border: none;
+            &:hover {
+              background-color: #000;
+              color: #fff;
+            }
+          }
+        }
+
+        h6 {
+          display: flex;
+          padding: 10px;
+          color: rgb(192, 179, 179);
+          font-size: 13px;
+          font-weight: 700;
+          font-size: 20px;
+          &:hover {
+            color: blue;
+          }
+          i {
+            font-size: 23px;
+
+            margin-left: 40px;
+          }
+        }
+        p {
+          color: rgb(54, 51, 51);
+          font-weight: 500;
+        }
+
+        .dnmc-icon {
+          display: flex;
+          align-items: center;
+          column-gap: 30px;
+          margin-left: 17px;
+          font-size: 20px;
+          font-weight: bold;
+          #edit {
+            color: green;
+          }
+          #delete {
+            color: red;
+          }
+          #basket {
+            color: rgb(204, 238, 10);
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    #dmnc-card {
+      margin-top: 10vh;
+      display: flex;
+      row-gap: 20px;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+header .header-top {
+  text-align: center;
+}
+header .header-top button {
+  border: none;
+  background-color: rgb(215, 60, 86);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 10px;
+}
+header .header-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-bottom .headr-list {
+  display: flex;
+  align-items: center;
+}
+header .header-bottom .headr-list img {
+  width: 140px;
+}
+header .header-bottom .headr-list #ul {
+  display: flex;
+  margin: auto 0;
+  column-gap: 40px;
+  align-items: center;
+}
+header .header-bottom .headr-list #ul li a {
+  text-decoration: none;
+  color: black;
+}
+header .header-bottom .headr-list #ul li a:hover {
+  color: rgb(65, 65, 211);
+}
+header .header-bottom .headr-list #ul li #dropdownMenuButton1 {
+  color: black;
+}
+header .header-bottom .headr-list #ul li #dropdownMenuButton1::after {
+  display: none;
+}
+header .header-bottom .headr-list #ul li #dropdownMenuButton1:hover {
+  color: rgb(65, 65, 211);
+}
+header .header-bottom .hedr-icon {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}
+header .header-bottom .hedr-icon i {
+  font-size: 20px;
+}
+header .header-bottom .hedr-icon i:hover {
+  color: blue;
+}
+header .header-bottom .hedr-icon a i {
+  color: black;
+}
+@media only screen and (max-width: 768px) {
+  header .header-top {
+    display: none;
+  }
+  header .header-bottom .headr-list img {
+    width: 140px;
+  }
+  header .header-bottom .headr-list #ul {
+    display: none;
+  }
+  header .header-bottom .hedr-icon {
+    display: none;
+  }
+}
+
+#hero-banner .carousel-caption {
+  top: 300px;
+  color: black;
+}
+#hero-banner .carousel-caption h3 {
+  font-size: 27px;
+  color: rgb(75, 74, 74);
+}
+#hero-banner .carousel-caption h1 {
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-top: 29px;
+}
+#hero-banner .carousel-caption #button {
+  display: flex;
+  justify-content: start;
+  margin-left: 10px;
+  margin-top: 29px;
+}
+#hero-banner .carousel-caption #button button {
+  border: none;
+  padding: 9px 29px;
+  background-color: rgb(49, 49, 170);
+  border-radius: 23px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#hero-banner .carousel-caption #button button:hover {
+  transition: 1s;
+  background-color: rgb(43, 40, 40);
+}
+@media only screen and (max-width: 768px) {
+  #hero-banner {
+    margin-top: 20vh;
+  }
+  #hero-banner .carousel-caption {
+    top: 400px;
+  }
+}
+
+#accessories {
+  margin-top: 10vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#accessories .card img {
+  width: 100%;
+  position: relative;
+}
+#accessories .card .accer-card {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 90px;
+  padding: 29px;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+#accessories .card .accer-card:hover {
+  background-color: rgba(8, 78, 154, 0.7);
+}
+#accessories .card .accer-card:hover .accer-text {
+  color: #fff;
+}
+#accessories .card .accer-card:hover .accer-hover {
+  display: block;
+}
+#accessories .card .accer-card .accer-text h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+#accessories .card .accer-card .accer-text h1 p {
+  color: gray;
+}
+#accessories .card .accer-card .accer-hover {
+  display: none;
+}
+#accessories .card .accer-card .accer-hover h3 {
+  color: #fff;
+  position: relative;
+  transition: 2s;
+}
+#accessories .card .accer-card .accer-hover h3::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 37%;
+  background-color: #fff;
+  bottom: -30%;
+  left: 1%;
+}
+
+#product-overview ul {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+  margin: auto 0;
+  padding: 0;
+}
+#product-overview ul li a {
+  text-decoration: none;
+  color: grey;
+  position: relative;
+}
+#product-overview ul li a:hover {
+  color: black;
+}
+#product-overview ul li a:hover::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 97%;
+  background-color: rgb(55, 52, 52);
+  bottom: -30%;
+  left: 1%;
+}
+#product-overview #button {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+#product-overview #button button {
+  font-size: 17px;
+  padding: 3px 10px;
+}
+#product-overview #button input {
+  height: 5vh;
+}
+#product-overview #dmnc-card {
+  margin-top: 10vh;
+  display: flex;
+  row-gap: 20px;
+}
+#product-overview #dmnc-card #card {
+  max-width: 300px;
+  overflow: hidden;
+}
+#product-overview #dmnc-card #card .card {
+  border: none;
+}
+#product-overview #dmnc-card #card .card:hover #details {
+  display: block;
+}
+#product-overview #dmnc-card #card .card img {
+  transition: 2s all;
+  position: relative;
+  width: 100%;
+}
+#product-overview #dmnc-card #card .card img:hover {
+  transform: scale(1.2);
+}
+#product-overview #dmnc-card #card .card #details {
+  display: none;
+  position: absolute;
+  bottom: 140px;
+  left: 90px;
+}
+#product-overview #dmnc-card #card .card #details a {
+  text-decoration: none;
+  color: black;
+  border-radius: 23px;
+  padding: 10px 20px;
+  border: none;
+}
+#product-overview #dmnc-card #card .card #details a:hover {
+  background-color: #000;
+  color: #fff;
+}
+#product-overview #dmnc-card #card .card h6 {
+  display: flex;
+  padding: 10px;
+  color: rgb(192, 179, 179);
+  font-size: 13px;
+  font-weight: 700;
+  font-size: 20px;
+}
+#product-overview #dmnc-card #card .card h6:hover {
+  color: blue;
+}
+#product-overview #dmnc-card #card .card h6 i {
+  font-size: 23px;
+  margin-left: 40px;
+}
+#product-overview #dmnc-card #card .card p {
+  color: rgb(54, 51, 51);
+  font-weight: 500;
+}
+#product-overview #dmnc-card #card .card .dnmc-icon {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  margin-left: 17px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#product-overview #dmnc-card #card .card .dnmc-icon #edit {
+  color: green;
+}
+#product-overview #dmnc-card #card .card .dnmc-icon #delete {
+  color: red;
+}
+#product-overview #dmnc-card #card .card .dnmc-icon #basket {
+  color: rgb(204, 238, 10);
+  margin-top: 0;
+}
+@media only screen and (max-width: 768px) {
+  #product-overview #dmnc-card {
+    margin-top: 10vh;
+    display: flex;
+    row-gap: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+#add-edit {
+  margin-top: 20vh;
+}
+
+#basket {
+  margin-top: 18vh;
+}
+#basket #card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  padding: 0;
+}
+
+#details {
+  margin-top: 20vh;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  background-color: #222222;
+  height: 17vh;
+  margin-top: 15vh;
+}
+footer .footer-top {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+}
+footer .footer-btm {
+  color: grey;
+}
+footer .footer-btm span {
+  color: blue;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,54 @@
+{
+  "card": [
+    {
+      "photo": "./assets/image/product-03.jpg",
+      "title": "Esprit Ruffle Shirt",
+      "price": "238",
+      "id": 2
+    },
+    {
+      "photo": "./assets/image/product-04.jpg",
+      "title": "Eaque quis in est v",
+      "price": "176",
+      "id": 4
+    },
+    {
+      "photo": "./assets/image/product-07.jpg",
+      "title": "Beatae esse ipsum u",
+      "price": "635",
+      "id": 5
+    },
+    {
+      "photo": "./assets/image/product-05.jpg",
+      "title": "Lorem aspernatur cul",
+      "price": "301",
+      "id": 6
+    },
+    {
+      "photo": "./assets/image/product-01.jpg",
+      "title": "Ipsa perferendis si",
+      "price": "229",
+      "id": 7
+    }
+  ],
+  "basket": [
+    {
+      "photo": "./assets/image/product-07.jpg",
+      "title": "Beatae esse ipsum u",
+      "price": "635",
+      "id": 5
+    },
+    {
+      "photo": "./assets/image/product-05.jpg",
+      "title": "Lorem aspernatur cul",
+      "price": "301",
+      "id": 6
+    },
+    {
+      "photo": "./assets/image/product-03.jpg",
+      "title": "Esprit Ruffle Shirt",
+      "price": "238",
+      "id": 2
+    }
+  ]
+}
